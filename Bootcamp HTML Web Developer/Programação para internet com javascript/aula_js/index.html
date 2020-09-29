@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha página</title>
+        <meta charset="utf-8">
+        <script src="./js/main.js"></script>
+        <style>
+            body{
+                display:flex;
+                flex-direction: column;
+                align-items: center;                
+                justify-content: center;
+
+            }
+        </style>
+    </head>
+
+    <body onload="carregarPagina()">
+        <!-- Manipulando elementos -->
+        <button type="button" onclick="botaoClicado(this)">Clique aqui</button>
+        
+        <h3 id="message" onmouseover="mousePorCima()" onmouseout="alterarStringElemento('message','Mouse saiu de cima *o*')"></h3>
+
+        <button type="button" onclick="redirecionar()">Redirecionar para pesquisa</button>
+        <p>Options:</p>
+        <select name="" id="" onchange="change(this)">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+        </select>
+        
+    </body>
+</html>
