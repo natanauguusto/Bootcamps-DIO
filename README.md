@@ -6,6 +6,6 @@ Projetos:
   - Bootcamps-DIO/Bootcamp HTML Web Developer/Recriando pagina inicial do instagram/
 	* Recriando pagina inicial do instagram, estudando conceitos sobre o flexbox.
   - Bootcamps-DIO/Bootcamp HTML Web Developer/Recriando a interface do netflix/
-  	* Recriando a interface do netflix, estudando flexbox e uso de plugin.
+  	* Recriando a interface do netflix, estudando flexbox,wrappers/containers e uso de plugin.
   
           
