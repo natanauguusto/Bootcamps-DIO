@@ -1,0 +1,98 @@
+:root{
+    --vermelho:#E50941;
+    --preta:#141414;    
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: var(--preta);
+    font-family:"Times New Roman",Times, serif,Arial, Helvetica, sans-serif;
+    color: white;    
+    
+}
+header .logo
+{
+    color:var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 40px;
+    margin-left: 1rem;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#aaa;
+    margin-right: 10px;
+}
+
+/* WRAPPER = ENVoLOPAR/ENVELOPE */
+
+header nav a:hover{
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-between;
+}
+ /* Filme principal */
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/capa-principal.jpg");
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,0.5);
+    border:none;
+    color:white;
+    padding: 1em 2em;
+    margin-right: 1em;    
+    font-size: 12px;
+    cursor: pointer;   
+    transition:.3s ease all;
+    
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: .5em;
+}
+.container{
+    margin: 0 1.2em;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+/* Olhar site: font awesome */
+/* Pesquisar sobre wrapper's e container's */
+/* Conhecer Jquery e Plugin Owl Carousel 2 */
+/* MediaQueries */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 1em;
+}
