@@ -1,0 +1,5 @@
+- Se trata de um framework para desenvolvimento de sites responsivos
+- Possui uma vasta biblioteca de componentes que facilita a agiliza o desenvolvimento de paginas web
+- É um dos frameworks mais conhecidos e usados para desenvolvimento front-end
+
+Site bootstrap: https://getbootstrap.com

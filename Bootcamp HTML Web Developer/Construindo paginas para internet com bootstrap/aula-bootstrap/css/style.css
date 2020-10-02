@@ -1,0 +1,30 @@
+body{
+    color: white;
+}
+.navbar{
+    background-color:lightblue;
+}
+#quem-somos{
+    background-color: orange;
+
+}
+.margin{
+    /* margin-top: 1em; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#parceiros{
+    background-color: lightblue;
+}
+.dio{
+    width: 100%;
+}
+.servico{
+    width: 100%;
+}
+#servicos,.bg-footer{
+    background-color: white;
+    color: black;
+    margin-bottom: 50px;
+}
+
