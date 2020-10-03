@@ -9,8 +9,8 @@ snake[0]={
 }
 
 let food={
-    x:pointFood(),
-    y:pointFood()
+    x:pointFoodRandom(),
+    y:pointFoodRandom()
 }
 
 function criarBG(){
@@ -29,7 +29,7 @@ function update(event){
     if(event.keyCode==39 && direction !='left')  direction="right";
     if(event.keyCode==40 && direction !='up')    direction="down";    
 }
-function pointFood(){
+function pointFoodRandom(){
     return Math.floor(Math.random()*15+1)*box;
 }
 function iniciarJogo(){
@@ -39,16 +39,24 @@ function iniciarJogo(){
     if(snake[0].y< 0 && direction=="up") snake[0].y=16*box;
     criarBG();
     criarCobrinha();    
-  
+    drawFood();
     let snakeX=snake[0].x;
     let snakeY=snake[0].y;
-    console.log("x:"+snakeX+",y:"+snakeY);
+    //console.log("x:"+snakeX+",y:"+snakeY);
     
     if(direction=="right")snakeX+=box;
     if(direction=="left")snakeX-=box;
     if(direction=="up")snakeY-=box;
     if(direction=="down")snakeY+=box;
     
+    if(snakeX !=food.x||snakeY !=food.y){
+        snake.pop();
+    }
+    else{
+        food.x=pointFoodRandom();
+        food.y=pointFoodRandom();      
+    }
+
     snake.pop();
     let newHead = {
         x:snakeX ,
@@ -66,6 +74,6 @@ function drawFood(){
 let jogo=setInterval(function(){
     document.addEventListener('keydown',update);
     iniciarJogo();
-    drawFood();
 },100);
+
 // Parte 1,2,3,4 ja feito
