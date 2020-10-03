@@ -8,6 +8,11 @@ snake[0]={
     y:8*box
 }
 
+let food={
+    x:pointFood(),
+    y:pointFood()
+}
+
 function criarBG(){
     context.fillStyle="lightgreen";
     context.fillRect(0,0,16*box,16*box);
@@ -24,7 +29,9 @@ function update(event){
     if(event.keyCode==39 && direction !='left')  direction="right";
     if(event.keyCode==40 && direction !='up')    direction="down";    
 }
-
+function pointFood(){
+    return Math.floor(Math.random()*15+1)*box;
+}
 function iniciarJogo(){
     if(snake[0].x > 15*box && direction =="right")snake[0].x=0;
     if(snake[0].x< 0 && direction=='left') snake[0].x=16*box;
@@ -49,11 +56,16 @@ function iniciarJogo(){
     }
     snake.unshift(newHead);
 }
+function drawFood(){
+    context.fillStyle='red';
+    context.fillRect(food.x,food.y,box,box);
 
+}
 
 
 let jogo=setInterval(function(){
     document.addEventListener('keydown',update);
     iniciarJogo();
+    drawFood();
 },100);
-// Parte 1,2 ja feito
+// Parte 1,2,3,4 ja feito
