@@ -56,7 +56,6 @@ function iniciarJogo(){
         food.x=pointFoodRandom();
         food.y=pointFoodRandom();      
     }
-
     
     let newHead = {
         x:snakeX ,
@@ -69,7 +68,6 @@ function drawFood(){
     context.fillRect(food.x,food.y,box,box);
 
 }
-
 
 let jogo=setInterval(function(){
     document.addEventListener('keydown',update);
