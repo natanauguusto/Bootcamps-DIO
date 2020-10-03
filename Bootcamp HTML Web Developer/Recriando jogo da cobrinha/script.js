@@ -57,7 +57,7 @@ function iniciarJogo(){
         food.y=pointFoodRandom();      
     }
 
-    snake.pop();
+    
     let newHead = {
         x:snakeX ,
         y:snakeY
